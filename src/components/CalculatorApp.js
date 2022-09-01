@@ -8,8 +8,9 @@ const UserContext = createContext();
 const CalculatorApp = () => {
   
   const[result, setResult] = useState("");
-  const handleChange =() =>{
-    setResult(result.concat(window.event.target.value))
+  const handleChange =(value) =>{
+    // setResult(result.concat(window.event.target.value))
+    setResult(result.concat(value))
   }
   const clear =() =>{
     setResult("")

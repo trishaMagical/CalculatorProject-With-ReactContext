@@ -6,7 +6,7 @@ const Button = () => {
   // const obj = useContext(UserContext);
   const [numbers, setNumbers] = useState([1,2,3,4,5,6,7,8,9,0 ,'+','-','*','/'])
   return (
-    <div className="flex-container">
+    <div className="container">
       
        <Key/>
         {/* <input type="button" value="AC" onClick={obj.clear}/> */}

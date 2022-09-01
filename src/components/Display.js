@@ -1,6 +1,6 @@
 import React,{useState,useContext} from 'react'
 import {UserContext} from './CalculatorApp';
-import "./CalculatorApp.css"
+import "./Display.css"
 
 
 const Display = () =>{
@@ -10,7 +10,7 @@ const Display = () =>{
   // const[result, setResult] = useState("");
 
   return (
-    <div className='burgerColor'>
+    <div>
       <input 
         type="text"
         placeholder='0'
