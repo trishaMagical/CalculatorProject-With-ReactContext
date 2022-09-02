@@ -1,6 +1,6 @@
 import React, { useState,createContext, useContext } from 'react'
 import Display from '../components/Display';
-import Button from '../components/Button';
+import KeyPad from './KeyPad';
 import "./CalculatorApp.css";
 import {GiHamburgerMenu} from "react-icons/gi";
 const UserContext = createContext();
@@ -22,19 +22,13 @@ const CalculatorApp = () => {
   return (
       <div className='calculator-App'>
         <div className='burgerColor'>
-                <GiHamburgerMenu/>
-                <label className='Heading'>CalculatorApp</label>
-             </div>
+            <GiHamburgerMenu/>
+            <label className='Heading'>CalculatorApp</label>
+          </div>
         <UserContext.Provider value={{"result":result, "handleChange":handleChange,"clear":clear,"summ":summ} } >
         <Display />
-        <Button />
-
+        <KeyPad />
         </UserContext.Provider>
-       
-
-       
-
-
       </div>  
   )
 }
